@@ -1,26 +1,24 @@
 * {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
 body {
-  font-family: 'Poppins', sans-serif;
   background-color: #e5e5e5;
+  font-family: "Poppins", sans-serif;
 }
 
 .page {
   margin: 0 auto;
   width: 768px;
-
 }
 
 body::before {
-  content: '';
+  content: "";
   width: 100%;
   height: 368px;
-  
+
   position: absolute;
   top: 0;
   left: 0;
@@ -34,15 +32,15 @@ header {
 }
 
 header h1 {
-  font-family: 'Archivo', sans-serif;
+  font-family: "Archivo", sans-serif;
   font-weight: bold;
-  font-size: 36px;  
+  font-size: 36px;
   line-height: 42px;
   color: #fff;
   margin-bottom: 26px;
 }
 
-header p{
+header p {
   color: #42d3ff;
   line-height: 26px;
   font-size: 16px;
@@ -55,19 +53,59 @@ form {
   border-radius: 8px;
 
   padding: 64px;
-  
 }
 
 fieldset {
   border: none;
 }
 
+.fieldset-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
 fieldset legend {
-  font-family: 'Archivo';
+  font-family: "Archivo";
   font-weight: 600;
   font-size: 24px;
   line-height: 34px;
 
   border-bottom: 1px solid #e6e6f0;
   width: 100%;
+}
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-wrapper label {
+  font-size: 14px;
+  line-height: 24px;
+
+  color: #4e4958;
+
+  margin-right: 12px;
+  margin-bottom: 8px;
+}
+
+label span {
+  font-size: 12px;
+  color: #777;
+
+  margin-left: 12px;
+}
+
+.input-wrapper input,
+.input-wrapper textarea {
+  border: 1px solid #e6e6f0;
+  border-radius: 8px;
+  height: 56px;
+  padding: 0 24px;
+  font-family: "Poppins", sans-serif;
+}
+
+.input-wrapper textarea {
+  padding: 0;
+  height: 168px;
 }
